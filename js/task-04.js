@@ -1,6 +1,6 @@
 let counterValue = 0;
 
-const valueToGet = document.getElementById('value');
+const valueToGet = document.querySelector('#value');
 
 const buttons = document.getElementsByTagName('button');
 

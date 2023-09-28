@@ -14,6 +14,14 @@ const images = [
 ];
 
 const gallery = document.querySelector('.gallery');
+gallery.style.display = 'flex';
+gallery.style.justifyContent = 'space-between';
+gallery.style.alignItems = 'center';
+gallery.style.listStyle = 'none';
+const title = document.createElement("h2");
+title.textContent = "ANIMAL WORLD";
+gallery.before(title);
+title.style.textAlign = 'center';
 
 const galleryMarkup = images.reduce(
   (accamulator, { url, alt }) => 
